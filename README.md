@@ -9,6 +9,14 @@ An Agent Skill that checks a repository before it goes open source, then fills i
 
 ## Install
 
+With the [`skills`](https://github.com/vercel-labs/skills) CLI, which detects Claude Code, Codex and other agents:
+
+```bash
+npx skills add KyrieLii/oss-prep -g
+```
+
+`-g` installs it for your user, so it works in every repository; add `-a claude-code` for one agent only. To work on the skill itself, clone it and link the folder instead:
+
 ```bash
 ln -s ~/Github/oss-prep ~/.claude/skills/oss-prep
 ```
