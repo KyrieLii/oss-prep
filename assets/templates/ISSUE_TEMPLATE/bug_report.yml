@@ -1,0 +1,37 @@
+name: Bug report
+description: Something does not work as described.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  # Keep only the environment fields that matter for this project.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: "{{e.g. release tag, commit, or the site URL}}"
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: "{{e.g. browser and OS, or Node version and OS}}"
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Logs or screenshots. Remove personal data before posting.
